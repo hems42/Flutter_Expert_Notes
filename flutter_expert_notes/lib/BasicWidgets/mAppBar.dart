@@ -8,8 +8,8 @@ class mAppBar{
 
 
   /*
-  AppBar uygulamalarda açık oaln sayfanın başlık vs idğer özelliklleri barındırdığı
-  bir bar yapısıdır aşağıda özelliklerinden bahsedeğim..
+  AppBar uygulamalar da açık olan sayfanın başlık vs diğer özellikllerini barındırdığı
+  bir bar yapısıdır aşağıda özelliklerinden bahsedeceğim..
 */
 
    AppBar myAppBar()
@@ -17,7 +17,8 @@ class mAppBar{
 
 
      return AppBar(
-       title: Text("AppBar Başlık"), // başlık için text widget yada başka bir widget olabilir ama  text mantıklı
+       title: Text("AppBar Başlık"), // başlık için text widget ya da başka bir
+       // widget olabilir ama  text mantıklı
        shape: RoundedRectangleBorder(
 
        /*appbar  şeklini yönetebildiğimiz paramatere shape
@@ -54,7 +55,7 @@ class mAppBar{
 
        ),
        elevation: 15, // yükselik hissi
-       backgroundColor: Colors.orange,
+       backgroundColor: Colors.purple,
        primary: true, // botttom elemnette birşeyler varsa ve flexible olabiliyorsa sonda asıldığımızda sona geldiğimiz belirten
                       //  renk uzama efektini iptal ediyor ya da aktif ediyor
 

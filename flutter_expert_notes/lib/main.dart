@@ -14,6 +14,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Uygulama başlığı",
+      color: Colors.red,
+      actions: <Type, Action<Intent>>{
+        ... WidgetsApp.defaultActions,
+        ActivateAction: CallbackAction<Intent>(
+        onInvoke: (Intent intent) {
+        print("aksiyon çalışıt");
+        return null;
+        })},
       debugShowCheckedModeBanner: false,
       home: OrientationList(title: "Grid..."),
     );
@@ -90,7 +99,7 @@ class OrientationList extends StatelessWidget {
                   child: Container(
 
                     decoration: BoxDecoration(
-                        color: Colors.orange,
+                        color: Colors.red,
                       borderRadius: BorderRadius.all(Radius.circular(15))
                     ),
                     height: 100,
